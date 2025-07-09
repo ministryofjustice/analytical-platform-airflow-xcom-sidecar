@@ -2,19 +2,19 @@
 schemaVersion: 2.0.0
 
 containerRunOptions:
-  user: "nonroot"
+  user: "analyticalplatform"
 
 commandTests:
   - name: "whoami"
     command: "whoami"
-    expectedOutput: ["nonroot"]
+    expectedOutput: ["analyticalplatform"]
 
   - name: "user"
     command: "id"
-    args: ["-u", "nonroot"]
-    expectedOutput: ["65532"]
+    args: ["-u", "analyticalplatform"]
+    expectedOutput: ["1000"]
 
   - name: "group"
     command: "id"
-    args: ["-g", "nonroot"]
-    expectedOutput: ["65532"]
+    args: ["-g", "analyticalplatform"]
+    expectedOutput: ["1000"]

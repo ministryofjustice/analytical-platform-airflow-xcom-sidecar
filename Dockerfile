@@ -8,10 +8,10 @@ LABEL org.opencontainers.image.vendor="Ministry of Justice" \
       org.opencontainers.image.description="Airflow XCom Sidecar image for Analytical Platform" \
       org.opencontainers.image.url="https://github.com/ministryofjustice/analytical-platform-airflow-xcom-sidecar"
 
-ENV CONTAINER_USER="nonroot" \
-    CONTAINER_UID="65532" \
-    CONTAINER_GROUP="nonroot" \
-    CONTAINER_GID="65532"
+ENV CONTAINER_USER="analyticalplatform" \
+    CONTAINER_UID="1000" \
+    CONTAINER_GROUP="analyticalplatform" \
+    CONTAINER_GID="1000"
 
 RUN <<EOF
 adduser -D -u "${CONTAINER_UID}" -g "${CONTAINER_GID}" "${CONTAINER_USER}"
