@@ -1,2 +1,20 @@
 ---
 schemaVersion: 2.0.0
+
+containerRunOptions:
+  user: "nonroot"
+
+commandTests:
+  - name: "whoami"
+    command: "whoami"
+    expectedOutput: ["nonroot"]
+
+  - name: "user"
+    command: "id"
+    args: ["-u", "nonroot"]
+    expectedOutput: ["65532"]
+
+  - name: "group"
+    command: "id"
+    args: ["-g", "nonroot"]
+    expectedOutput: ["65532"]
