@@ -24,10 +24,12 @@ make test
 
 ## Managing Software Versions
 
-### Base Image
+### Alpine
 
-Generally Dependabot does this, but the following command will return the digest:
+Dependabot is configured to do this in [`.github/dependabot.yml`](.github/dependabot.yml), but if you need to get the digest, do the following
 
 ```bash
-TODO
+docker pull --platform linux/amd64 public.ecr.aws/docker/library/alpine:3.22
+
+docker image inspect --format='{{ index .RepoDigests 0 }}' public.ecr.aws/docker/library/alpine:3.22
 ```
