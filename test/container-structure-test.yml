@@ -1,0 +1,20 @@
+---
+schemaVersion: 2.0.0
+
+containerRunOptions:
+  user: "analyticalplatform"
+
+commandTests:
+  - name: "whoami"
+    command: "whoami"
+    expectedOutput: ["analyticalplatform"]
+
+  - name: "user"
+    command: "id"
+    args: ["-u", "analyticalplatform"]
+    expectedOutput: ["1000"]
+
+  - name: "group"
+    command: "id"
+    args: ["-g", "analyticalplatform"]
+    expectedOutput: ["1000"]
