@@ -29,7 +29,7 @@ make test
 Dependabot is configured to do this in [`.github/dependabot.yml`](.github/dependabot.yml), but if you need to get the digest, do the following
 
 ```bash
-docker pull --platform linux/amd64 public.ecr.aws/docker/library/alpine:3.22
+docker pull --platform linux/amd64 docker.io/alpine:3.22
 
-docker image inspect --format='{{ index .RepoDigests 0 }}' public.ecr.aws/docker/library/alpine:3.22
+docker image inspect --format='{{ index .RepoDigests 0 }}' docker.io/alpine:3.22
 ```
