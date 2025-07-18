@@ -33,3 +33,7 @@ docker pull --platform linux/amd64 docker.io/alpine:3.22
 
 docker image inspect --format='{{ index .RepoDigests 0 }}' docker.io/alpine:3.22
 ```
+
+## Deploying
+
+After a release of this image has been created, you need to update `PodDefaults.SIDECAR_CONTAINER.image` in <https://github.com/ministryofjustice/analytical-platform-airflow/blob/main/airflow/analytical_platform/standard_operator.py>
