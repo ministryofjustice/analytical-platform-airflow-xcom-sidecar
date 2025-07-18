@@ -29,7 +29,11 @@ make test
 Dependabot is configured to do this in [`.github/dependabot.yml`](.github/dependabot.yml), but if you need to get the digest, do the following
 
 ```bash
-docker pull --platform linux/amd64 public.ecr.aws/docker/library/alpine:3.22
+docker pull --platform linux/amd64 docker.io/alpine:3.22
 
-docker image inspect --format='{{ index .RepoDigests 0 }}' public.ecr.aws/docker/library/alpine:3.22
+docker image inspect --format='{{ index .RepoDigests 0 }}' docker.io/alpine:3.22
 ```
+
+## Deploying
+
+After a release of this image has been created, you need to update `PodDefaults.SIDECAR_CONTAINER.image` in <https://github.com/ministryofjustice/analytical-platform-airflow/blob/main/airflow/analytical_platform/standard_operator.py>
