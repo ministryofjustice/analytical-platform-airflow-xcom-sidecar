@@ -1,2 +1,5 @@
 ## Trivy: Healthchecks applied downstream
 AVD-DS-0026
+
+## CVE-2026-22184 - (zLib)
+CVE-2026-22184
