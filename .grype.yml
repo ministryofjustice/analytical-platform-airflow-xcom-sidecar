@@ -1,0 +1,7 @@
+---
+# Grype configuration file for container vulnerability scanning
+# https://github.com/anchore/grype#configuration
+
+ignore:
+  - vulnerability: CVE-2026-22184
+    reason: "No fixed package version currently available in Alpine repositories used by this image."
