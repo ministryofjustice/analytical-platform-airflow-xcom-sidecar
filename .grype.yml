@@ -5,3 +5,17 @@
 ignore:
   - vulnerability: CVE-2026-22184
     reason: "No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-14456
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-14457
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-18798
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-54874
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-63072
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-63075
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-63076
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
