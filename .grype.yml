@@ -21,3 +21,5 @@ ignore:
     reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
   - vulnerability: CVE-2026-63073
     reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
+  - vulnerability: CVE-2026-75803
+    reason: "libcrypto3/libssl3 3.5.7-r0, No fixed package version currently available in Alpine repositories used by this image."
