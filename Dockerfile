@@ -14,6 +14,7 @@ ENV CONTAINER_USER="analyticalplatform" \
     CONTAINER_GID="1000"
 
 RUN <<EOF
+apk add --no-cache libcrypto3~3.5.9 libssl3~3.5.9
 adduser -D -u "${CONTAINER_UID}" -g "${CONTAINER_GID}" "${CONTAINER_USER}"
 EOF
 
